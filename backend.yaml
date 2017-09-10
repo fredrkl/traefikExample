@@ -1,6 +1,5 @@
-# RC for svc1
-kind: ReplicationController
-apiVersion: v1
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
   name: svc1
 spec:
@@ -22,8 +21,8 @@ spec:
           protocol: TCP
 ---
 # RC for svc2
-kind: ReplicationController
-apiVersion: v1
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
   name: svc2
 spec:
@@ -45,8 +44,8 @@ spec:
           protocol: TCP
 ---
 # RC for svc3
-kind: ReplicationController
-apiVersion: v1
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
   name: svc3
 spec:
